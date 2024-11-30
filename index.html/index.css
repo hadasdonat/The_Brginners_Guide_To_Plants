@@ -1,0 +1,132 @@
+/* כללי עיצוב בסיסיים */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* סוג גופן */
+    direction: rtl; /* כיוון טקסט ימין לשמאל */
+    margin: 0; /* הסרת שוליים */
+    padding: 0; /* הסרת רווחים פנימיים */
+    background-color: #f9f9f9; /* צבע רקע */
+}
+
+/* עיצוב כותרת עליונה */
+header {
+    background-color: #4CAF50; /* צבע רקע ירוק */
+    color: white; /* צבע טקסט */
+    padding: 20px; /* רווח פנימי */
+    text-align: center; /* יישור טקסט למרכז */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* הוספת צל */
+}
+
+/* עיצוב תפריט ניווט */
+nav ul {
+    list-style: none; /* ביטול נקודות ברשימה */
+    padding: 0; /* ביטול רווח פנימי */
+    display: flex; /* יישור פריטים גמיש */
+    justify-content: center; /* יישור פריטים למרכז */
+    margin-top: 10px; /* רווח עליון */
+}
+
+nav ul li {
+    margin: 0 15px; /* רווח בין הפריטים */
+}
+
+nav ul li a {
+    color: white; /* צבע טקסט */
+    text-decoration: none; /* הסרת קו תחתון */
+    font-size: 18px; /* גודל טקסט */
+}
+
+/* עיצוב תוכן פתיחה */
+.intro {
+    padding: 40px; /* רווח פנימי */
+    background-color: #ffffff; /* צבע רקע לבן */
+    text-align: center; /* יישור טקסט */
+    margin: 20px auto; /* רווח חיצוני */
+    max-width: 80%; /* רוחב מקסימלי */
+    border-radius: 10px; /* פינות מעוגלות */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* הוספת צל */
+}
+
+.intro p {
+    font-size: 18px; /* גודל טקסט */
+    line-height: 1.8; /* מרווח בין שורות */
+    color: #555; /* צבע טקסט אפור */
+}
+
+/* עיצוב כרטיסי צמחים */
+.plants {
+    display: flex; /* עיצוב גמיש */
+    flex-wrap: wrap; /* פריסה בשורות */
+    justify-content: space-evenly; /* מרווח שווה */
+    padding: 20px; /* רווח פנימי */
+    gap: 20px; /* מרווח בין כרטיסים */
+}
+
+.plant-card {
+    background-color: #ffffff; /* צבע רקע לבן */
+    border: 1px solid #ddd; /* מסגרת אפורה דקה */
+    border-radius: 10px; /* פינות מעוגלות */
+    width: 300px; /* רוחב כרטיס */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* הוספת צל */
+    transition: transform 0.3s ease; /* אנימציה */
+}
+
+.plant-card:hover {
+    transform: scale(1.05); /* הגדלת כרטיס בהרחפת עכבר */
+}
+
+.plant-image img {
+    width: 100%; /* רוחב תמונה */
+    height: 200px; /* גובה תמונה */
+    object-fit: cover; /* חיתוך לשמירת פרופורציות */
+}
+
+/* עיצוב טבלאות */
+.plants-table {
+    padding: 20px; /* רווח פנימי */
+    margin: 40px auto; /* רווח חיצוני */
+    background-color: #fff; /* צבע רקע לבן */
+    border-radius: 8px; /* פינות מעוגלות */
+    max-width: 90%; /* רוחב מקסימלי */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* הוספת צל */
+}
+
+table {
+    width: 100%; /* רוחב מלא */
+    border-collapse: collapse; /* ביטול רווח בין תאים */
+}
+
+table th, table td {
+    padding: 12px; /* רווח פנימי בתאים */
+    text-align: center; /* יישור מרכזי */
+    border: 1px solid #ddd; /* מסגרת אפורה */
+}
+
+table th {
+    background-color: #4CAF50; /* צבע רקע לכותרות */
+    color: white; /* צבע טקסט */
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2; /* צבע רקע שורות זוגיות */
+}
+
+table tr:hover {
+    background-color: #ddd; /* צבע רקע בהרחפת עכבר */
+}
+
+/* עיצוב "קצת עלינו" */
+.about-us {
+    background-color: #f9f9f9; /* צבע רקע */
+    padding: 20px; /* רווח פנימי */
+    border-radius: 10px; /* פינות מעוגלות */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* הוספת צל */
+    margin-top: 20px; /* רווח עליון */
+}
+
+/* עיצוב תחתית האתר */
+footer {
+    background-color: #333; /* צבע רקע כהה */
+    color: white; /* צבע טקסט */
+    padding: 20px; /* רווח פנימי */
+    text-align: center; /* יישור טקסט */
+}
