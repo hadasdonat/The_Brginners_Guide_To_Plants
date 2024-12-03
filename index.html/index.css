@@ -15,7 +15,23 @@ header {
     text-align: center; /* יישור טקסט למרכז */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* הוספת צל */
 }
+*/
+.video {
+    position: relative;
+    width: 100%; /* רוחב מלא */
+    padding-bottom: 56.25%; /* יחס 16:9 (גובה/רוחב * 100) */
+    height: 0;
+    overflow: hidden;
+}
 
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 /* עיצוב תפריט ניווט */
 nav ul {
     list-style: none; /* ביטול נקודות ברשימה */
